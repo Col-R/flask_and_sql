@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, session
+from flask import Flask, render_template, request, session, redirect
 # import the class from friend.py
 from friend import Friend
 app = Flask(__name__)
