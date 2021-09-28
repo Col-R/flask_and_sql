@@ -25,7 +25,7 @@ class Friend:
         for friend in results:
             friends.append( cls(friend) )
         return friends
-        
+
     @classmethod
     def save(cls, data ):
         query = "INSERT INTO friends ( first_name , last_name , occupation , created_at, updated_at ) VALUES ( %(fname)s , %(lname)s , %(occ)s , NOW() , NOW() );"
